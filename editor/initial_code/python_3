@@ -16,3 +16,5 @@ assert contar_palavras("Contar palavras, contar palavras, contar sempre.") == {'
 assert contar_palavras("Python! Python? Python.") == {'python': 3}
 assert contar_palavras("Nada a declarar; apenas palavras comuns.") == {'nada': 1, 'a': 1, 'declarar': 1, 'apenas': 1, 'palavras': 1, 'comuns': 1}
 assert contar_palavras("Os testes foram realizados com sucesso.") == {'os': 1, 'testes': 1, 'foram': 1, 'realizados': 1, 'com': 1, 'sucesso': 1}
+
+print("Seu código passou pelos testes, clique em Check para avançar!")
