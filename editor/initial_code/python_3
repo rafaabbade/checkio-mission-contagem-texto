@@ -1,1 +1,18 @@
-{{CODIGO INICIAL}}
+def contar_palavras(texto):
+    import string
+    texto = texto.lower().translate(str.maketrans('', '', string.punctuation)).split()       
+    # Seu código aqui
+    return None
+
+
+
+
+
+print("Example:")
+print(contar_palavras("A prática leva à perfeição. Praticar, praticar e praticar!"))
+
+assert contar_palavras("A prática leva à perfeição. Praticar, praticar e praticar!") == {'a': 1, 'prática': 1, 'leva': 1, 'à': 1, 'perfeição': 1, 'praticar': 3, 'e': 1}
+assert contar_palavras("Contar palavras, contar palavras, contar sempre.") == {'contar': 3, 'palavras': 2, 'sempre': 1}
+assert contar_palavras("Python! Python? Python.") == {'python': 3}
+assert contar_palavras("Nada a declarar; apenas palavras comuns.") == {'nada': 1, 'a': 1, 'declarar': 1, 'apenas': 1, 'palavras': 1, 'comuns': 1}
+assert contar_palavras("Os testes foram realizados com sucesso.") == {'os': 1, 'testes': 1, 'foram': 1, 'realizados': 1, 'com': 1, 'sucesso': 1}

@@ -1,18 +1,18 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+    Neste exercício, você deve implementar uma função que receba um texto como uma string, remova a pontuação, padronize as palavras para minúsculas e conte a frequência de cada palavra. A contagem deve ser armazenada em um dicionário, com as palavras como chaves e os valores representando quantas vezes cada palavra apareceu no texto.
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Uma string representando um texto que precisa ser analisado.
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Um dicionário contendo as palavras como chaves e seus respectivos números de ocorrências como valores.
 </p>
 
 
@@ -28,7 +28,9 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    analisar_notas([['Alice', 90], ['Bob', 75], ['Clara', 85]]) == ['Alice', 90]
+analisar_notas([['João', 88], ['Ana', 92], ['Miguel', 78]]) == ['Ana', 92]
+analisar_notas([['Carlos', 65], ['Marta', 85], ['Lucas', 85]]) == ['Marta', 85]
 </pre>
 {% endif %}
 </div>
